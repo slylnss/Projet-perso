@@ -1,14 +1,30 @@
+body{
+	height:100%;
+	width:100%;
+}
+
+.parallax{
+	background-image: url("images/bg.jpg");
+	background-attachment:fixed;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-size:cover;
+	height:100%;
+}
+
 .global{
 	position: relative;
 	z-index:1;
+	color:white;
 }
 
 .main{
-	overflow: hidden;
+	overflow:hidden;
+	height:50%;
+	width:300%;
 }
 
 .affiche{
-	display:block;
 	position: relative;
 }
 
@@ -17,12 +33,13 @@
 	bottom: 0;
 	left: 0;
 	z-index: 2;
-	width:100%;
+	color:gray;
 }
 
 .affiche img{
 	position:block;
 	z-index: 1;
+	border: white 10px solid;
 } 
 
 a{
