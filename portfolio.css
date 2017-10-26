@@ -20,9 +20,136 @@ body{
 
 .main{
 	overflow:hidden;
-	height:50%;
-	width:300%;
+	position:relative;
+	height:700px;
+	width:100%;
 }
+
+.header{
+	height:100%;
+	overflow:hidden;
+	position:relative;
+}
+
+.contr{
+	background-image: url("images/haut.png");
+	cursor:pointer;
+	height:70px;
+	left:50px;
+	opacity:0.3;
+	position:absolute;
+	top:5%;
+	width:70px;
+	z-index:2;
+	-webkit-transition:opacity linear 0.3s;
+	-ms-transition:opacity linear 0.3s;
+	transition:opacity linear 0.3s;
+	box-shadow:0 1px 2px white inset;
+}
+
+.contr:hover{
+	opacity:1;
+}
+
+
+.sel_page_1:checked ~ .contr.c2, .sel_page_2:checked ~ .contr.c3,.sel_page_3:checked ~ .contr.c4 
+.sel_page_4:checked ~ .contr.c5, .sel_page_5:checked ~ .contr.c6,.sel_page_6:checked ~ .contr.c7
+.sel_page_7:checked ~ .contr.c8, .sel_page_8:checked ~ .contr.c9{
+    background-image:url("images/bas.png");
+    display:block;
+    top:85%;
+}
+.sel_page_9:checked ~ .contr.c8, .sel_page_8:checked ~ .contr.c7,.sel_page_7:checked ~ .contr.c6 
+.sel_page_6:checked ~ .contr.c5, .sel_page_5:checked ~ .contr.c4,.sel_page_4:checked ~ .contr.c3
+.sel_page_3:checked ~ .contr.c2, .sel_page_2:checked ~ .contr.c1{
+    background-image:url("images/haut.png");
+    display:block;
+}
+
+.presentation{
+	background-image:url("images/bg.jpg");
+	height:100%;
+	left:0;
+	overflow:hidden;
+	position:absolute;
+	top:0;
+	width:100%;
+	-webkit-background-size:cover;
+	-ms-background-size:cover;
+	background-size:cover;
+}
+
+.main input:checked ~ .header {
+	-webkit-transition: all linear 1.0s;
+	-ms-transition: all linear 1.0s;
+	transition: all linear 1.0s;
+}
+.sel_page_1:checked ~ .header{
+	background-color: white;
+}
+.sel_page_2:checked ~ .header{
+	background-color: white;
+}
+.sel_page_3:checked ~ .header{
+	background-color: white;
+}
+.sel_page_4:checked ~ .header{
+	background-color: white;
+}
+.sel_page_5:checked ~ .header{
+	background-color: white;
+}
+.sel_page_6:checked ~ .header{
+	background-color: white;
+}
+.sel_page_7:checked ~ .header{
+	background-color: white;
+}
+.sel_page_8:checked ~ .header{
+	background-color: white;
+}
+.sel_page_9:checked ~ .header{
+	background-color: white;
+}
+
+.main input:checked ~ .header .presentation{
+	-webkit-transition: all linear 1.5s;
+	-ms-transition: all linear 1.5s;
+	transition: all linear 1.5s;
+}
+
+.sel_page_1:checked ~ .main .presentation{
+	background-position: 0 0;
+}
+.sel_page_2:checked ~ .main .presentation{
+	background-position: 0 -500px;
+}
+.sel_page_3:checked ~ .main .presentation{
+	background-position: 0 -1000px;
+}
+.sel_page_4:checked ~ .main .presentation{
+	background-position: 0 -1500px;
+}
+.sel_page_5:checked ~ .main .presentation{
+	background-position: 0 -2000px;
+}
+.sel_page_6:checked ~ .main .presentation{
+	background-position: 0 -2500px;
+}
+.sel_page_7:checked ~ .main .presentation{
+	background-position: 0 -3000px;
+}
+.sel_page_8:checked ~ .main .presentation{
+	background-position: 0 -3500px;
+}
+.sel_page_9:checked ~ .main .presentation{
+	background-position: 0 -4000px;
+}
+
+
+
+
+
 
 .affiche{
 	position: relative;
