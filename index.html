@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Author:Syl, Illustrator:Syl, Category: Portfolio" />
+	<link rel="stylesheet" href="portfolio.css" type="text/css"/>
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
+</head>
+<body>
+	<span id="s1"></span>
+	<span id="s2"></span>
+	<span id="s3"></span>
+	<div id="wrapper">
+		<div id="slide1">
+			<div class="slide_inside">
+				<img src="images/dev.png" height="50px"/><h1>Portfolio Web-siouss</h1>					
+				<p> Web-Dev &nbsp;&bull;&nbsp; Technicienne &nbsp;&bull;&nbsp; Freedom Working</p>
+			<nav>
+				<ul>
+					<li><a href="#s1">Qui suis-je?</a></li>				
+					<li><a href="#s2">Mes sites réalisés</a></li>
+					<li><a href="#s3">Me contacter</a></li>
+				</ul>
+			</nav>			
+			<h2 class="major">Qui suis-je?</h2>
+			<img src="images/moi.jpg" alt="photo de moi" height="150px" class="image" />
+			<p>&nbsp;&bull;&nbsp;Etudiante dans le développement depuis maintenant 3 ans, j'y ai trouvé ma voie pour le futur</p>
+			<p>&nbsp;&bull;&nbsp;Depuis plus de 15 ans dans le monde de l'informatique, je suis passée de la technique à la programmation</p>
+			</div>
+		</div>
+		<div id="slide2">
+			<div class="slide_inside">
+				<h2 class="major">Mes sites réalisés</h2>
+				<a href="http://web-siouss.be/SecondGame/index/"><img src="images/secondgame.png" alt="second game" height="125px"/></a>
+				<a href="http://web-siouss.be/restaurer-en-delice/"><img src="images/restaurer.png" alt="restaurer" height="125px"/></a>
+				<a href="http://web-siouss.be/cv/MyResume/"><img src=" images/cv.png" alt="cv" height="125px"/></a>
+				<a href="http://web-siouss.be/nettoglass/"><img src=" images/netto.png" alt="nettoglas" height="125px"/></a>
+				<a href="http://web-siouss.be/jame/"><img src=" images/jame.png" alt="jameservice" height="125px"/></a>
+				<a href="http://web-siouss.be/gic/"><img src=" images/gic.png" alt="gardeinficonfort" height="125px"/></a>
+				<a href="http://www.e-fpe.be/"><img src=" images/efpe.png" alt="efpe" height="125px"/></a>
+				<a href="http://absc.be/"><img src=" images/absc.png" alt="absc" height="125px"/></a>
+				<a href="http://rdr-tchanji.com/"><img src=" images/rda.png" alt="rda" height="125px"/></a>
+			</div>
+		</div>
+		<div id="slide3">
+			<div class="slide_inside">
+				<h2>Contact</h2>
+				<form method="post" action="#">
+					<div><label for="name">Nom</label></div>
+					<div><input type="text" name="name" id="name" /><br/><br/></div>
+					<div><label for="email">Email</label></div>
+					<div><input type="text" name="email" id="email" /><br/><br/></div>
+					<div><label for="message">Message</label></div>
+					<div><textarea name="message" id="message" rows="4"></textarea></div><br/><br/>
+					<input type="submit" value="Envoyer" class="special"/>
+					<input type="reset" value="Effacer" />
+				</form>
+				<div id="nav">
+					<ul>
+						<li><a href="www.linkedin.com/in/SlyLnss"><span class="label">Linkedin</span></a></li>
+						<li><a href="https://www.facebook.com/SlyLnss/"><span class="label">Facebook</span></a></li>
+						<li><a href="https://medium.com/@slylnss"><span class="label">Medium</span></a></li>
+						<li><a href="https://github.com/slylnss" class="icon fa-github"><span class="label">GitHub</span></a></li>
+					</ul>
+				</div>
+				<span class="copyright">&copy;2017  SlyLnss  
+				<a href="http://web-siouss.be">Web-siouss</a>.</span>
+			</div>
+		</div>
+	</div>
+	<script src="/upup.min.js"></script>
+	<script> 
+		UpUp.start({
+			'content': '<html><body><h1>Portolio Web-Siouss</h1></body></html>'
+		});
+	</script>
+</body>
+</html>
